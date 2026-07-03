@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Prince Vaishnav - Professional DevOps Engineer Portfolio. Specializing in CI/CD, AWS, Kubernetes, Docker, and Infrastructure as Code.">
+    <title> Prince Vaishnav | DevOps Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Radial Glow Background Effects -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                Prince<span class="logo-surname">🔸Portfolio</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+                    <!-- Moon Icon (Dark Mode Active) -->
+                    <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <!-- Sun Icon (Light Mode Active) -->
+                    <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section active-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="devops-badge">DevOps Engineer</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Prince Vaishnav</span>
+                    </h1>
+                    <p class="hero-description">
+                        I am a DevOps Engineer with experience in building, automating, and maintaining CI/CD pipelines
+                        and cloud infrastructure. I focus on improving deployment efficiency, system reliability, and
+                        scalability across production environments.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Contact Me</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="http://www.linkedin.com/in/prince-vaishnav-b685a0319" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-secondary">
+                            <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                         <!-- GitHub Button -->
+                        <a href="https://github.com/princevaishnav00"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-secondary">
+                    
+                            <svg class="btn-icon-left" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.72 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.19a10.9 10.9 0 0 1 5.74 0c2.19-1.5 3.15-1.19 3.15-1.19.62 1.59.23 2.76.11 3.05.74.81 1.18 1.85 1.18 3.11 0 4.45-2.7 5.42-5.27 5.71.41.35.77 1.04.77 2.1v3.11c0 .31.2.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+                            </svg>
+                    
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="image-border-glow"></div>
+                    <div class="image-container">
+                        <img src="./assets/avatar.png" alt="Prince Vaishnav Profile Portrait" class="profile-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll to About Me section">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section reveal-element">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card intro-card">
+                    <h3>Who I Am</h3>
+                    <p>I am passionate about DevOps, cloud infrastructure, automation, and building scalable deployment
+                        pipelines. I enjoy solving infrastructure challenges and improving software delivery using
+                        modern DevOps practices.</p>
+                </div>
+                <div class="about-info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h4>Location</h4>
+                            <p>Bengaluru,India</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:vaishnavprince995@gmail.com">vaishnavprince995@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section skills-section reveal-element">
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill: AWS -->
+                <div class="skill-card">
+                    <div class="skill-icon aws">
+                        <!-- Cloud SVG icon with stylized letters -->
+                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="skill-img">
+                    </div>
+                    <span class="skill-name">AWS</span>
+                </div>
+                <!-- Skill: Docker -->
+                <div class="skill-card">
+                    <div class="skill-icon docker">
+                        <!-- Whale SVG icon -->
+                        <img src="https://cdn.simpleicons.org/docker" alt="Docker" class="skill-img">
+                    </div>
+                    <span class="skill-name">Docker</span>
+                </div>
+                <!-- Skill: Kubernetes -->
+                <div class="skill-card">
+                    <div class="skill-icon kubernetes">
+                        <!-- Heptagon steering wheel SVG -->
+                        <img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes" class="skill-img">
+                    </div>
+                    <span class="skill-name">Kubernetes</span>
+                </div>
+                <!-- Skill: Terraform -->
+                <div class="skill-card">
+                    <div class="skill-icon terraform">
+                        <!-- Interlocking cubes SVG -->
+                        <img src="https://cdn.simpleicons.org/terraform" alt="Terraform" class="skill-img">
+                    </div>
+                    <span class="skill-name">Terraform</span>
+                </div>
+                <!-- Skill: Argo CD -->
+                <div class="skill-card">
+                    <div class="skill-icon argocd">
+                        <!-- Argo CD icon -->
+                        <img src="https://cdn.simpleicons.org/argo" alt="Argo CD" class="skill-img">
+                    </div>
+                    <span class="skill-name">Argo CD</span>
+                </div>
+                <!-- Skill: Linux -->
+                <div class="skill-card">
+                    <div class="skill-icon linux">
+                        <!-- Linux icon  -->
+                        <img src="https://cdn.simpleicons.org/linux" alt="Linux" class="skill-img">
+                    </div>
+                    <span class="skill-name">Linux</span>
+                </div>
+                <!-- Skill: Jenkins -->
+                <div class="skill-card">
+                    <div class="skill-icon jenkins">
+                        <!--  jenkins icon -->
+                        <img src="https://cdn.simpleicons.org/jenkins" alt="Jenkins" class="skill-img">
+                    </div>
+                    <span class="skill-name">Jenkins</span>
+                </div>
+                <!-- Skill: Prometheus -->
+                <div class="skill-card">
+                    <div class="skill-icon prometheus">
+                        <!-- prometheous icon  -->    
+                    <img src="https://cdn.simpleicons.org/prometheus" alt="Prometheus" class="skill-img">
+                    </div>
+                    <span class="skill-name">Prometheus</span>
+                </div>
+                <!-- Skill: Grafana -->
+                <div class="skill-card">
+                    <div class="skill-icon grafana">
+                        <!-- Grafana SVG -->
+                        <img src="https://cdn.simpleicons.org/grafana" alt="Grafana" class="skill-img">
+                    </div>
+                    <span class="skill-name">Grafana</span>
+                </div>
+                <!-- Skill: Git -->
+                <div class="skill-card">
+                    <div class="skill-icon git">
+                        <!-- Git  icon -->
+                        <img src="https://cdn.simpleicons.org/git" alt="Git" class="skill-img">
+                    </div>
+                    <span class="skill-name">Git</span>
+                </div>
+                <!-- Skill: Ansible -->
+                <div class="skill-card">
+                    <div class="skill-icon Ansibke">
+                        <!--  ansible icon  prompt  -->
+                        <img src="https://cdn.simpleicons.org/ansible" alt="Ansible" class="skill-img">
+                    </div>
+                    <span class="skill-name">Ansible</span>
+                </div>
+                <!-- Skill: Shell Scripting -->
+                <div class="skill-card">
+                    <div class="skill-icon shell">
+                        <!-- Bash command prompt  -->
+                        <img src="https://cdn.simpleicons.org/gnubash/4EAA25" alt="Bash" class="skill-img">
+                    </div>
+                    <span class="skill-name">Shell Scripting</span>
+                </div>
+                <!-- Skill: GItHub Action CI/CD -->
+                <div class="skill-card">
+                    <div class="skill-icon cicd">
+                        <!-- Infinity/Loop  -->
+                        <img src="https://cdn.simpleicons.org/githubactions" alt="GitHub Actions" class="skill-img">
+                    </div>
+                    <span class="skill-name"> GitHub Action CI/CD</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="section experience-section reveal-element">
+            <div class="section-header">
+                <h2 class="section-title">Training & <span class="gradient-text">Experience</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="experience-meta">
+                            <span class="duration-badge">July 2025 - Jan 2026</span>
+                            <h3> DevOps Certification Program</h3>
+                            <h4 class="company-name">PySpiders Institute, Bengaluru</h4>
+                            <!-- Certificate Link -->
+                            <a href="https://drive.google.com/file/d/14S2codF9SIv6zoCdVDmB6GAoXdkfD6eH/view?usp=sharing"
+                                target="_blank" class="certificate-link">
+                                📜 View Certificate
+                            </a>
+                        </div>
+                        <ul class="experience-details">
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Completed hands-on training in AWS, Docker, Kubernetes, Terraform.</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Built multiple real-world DevOps projects.</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Worked with Jenkins and GitHub Actions for CI/CD.</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Implemented monitoring and alerting using Prometheus and Grafana.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section reveal-element">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-card glass-card">
+                    <div class="education-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                        </svg>
+                    </div>
+                    <div class="education-info">
+                        <span class="graduation-year">Graduated: 2025</span>
+                        <h3>Bachelor of Computer Application (BCA)</h3>
+                        <h4 class="school-name">Gujarat University, Ahmedabad</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section reveal-element">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-panel glass-card">
+                    <h3>Let's Connect</h3>
+                    <p class="contact-subtitle">Feel free to reach out for collaborations, job opportunities, or just to
+                        say hi!</p>
+
+                    <div class="contact-details-list">
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-detail">
+                                <span>Email</span>
+                                <a href="mailto:vaishnavprince995@gmail.com"
+                                    class="detail-link">vaishnavprince995@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-detail">
+                                <span>LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/prince-vaishnav-b685a0319/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="detail-link">linkedin.com/in/prince-vaishnav-b685a0319</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="contact-detail">
+                                <span>Phone</span>
+                                <a href="tel:+919016151228" class="detail-link">+91 90161 51228</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Navigation Bar & Footer -->
+    <div class="floating-dock-container">
+        <div class="floating-dock glass-card">
+            <a href="./assets/Prince-Resume.pdf" target="_blank"
+               rel="noopener noreferrer" class="btn btn-primary">
+               <svg class="btn-icon-left" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span><b>RESUME</b></span>
+            </a>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Prince Vaishnav &bull; All rights reserved.</p>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script src="app.js"></script>
+</body>
+
+</html>
