@@ -15,6 +15,7 @@
         rel="stylesheet">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -35,6 +36,7 @@
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
 
@@ -370,9 +372,123 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section reveal-element">
-            <div class="section-header">
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+             <div class="section-header">
+                 <h2 class="section-title">
+                     Featured <span class="gradient-text">Projects</span>
+                 </h2>
+                 <div class="section-divider"></div>
+             </div>
+            <div class="projects-container">
+                    <!-- Project 1 -->
+                    <div class="project-item glass-card">
+                            <div class="project-header">
+                              <h3>Three-Tier Application Deployment on AWS EKS</h3>   
+                              <a href="https://github.com/princevaishnav00/3-tier-EKS-deployment"
+                                 target="_blank"
+                                 class="project-link">
+                                  View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+                              </a>
+                            </div>
+                           <div class="project-tags">
+                               <span>AWS EKS</span>
+                                    <span>ECR</span>
+                                    <span>ALB</span>
+                                    <span>Kubernetes</span>
+                                    <span>Docker</span>
+                                    <span>Jenkins</span>
+                                    <span>Argo CD</span>
+                                    <span>Prometheus</span>
+                                    <span>Grafana</span>
+                                </div> 
+                                 <p>
+                                    Deployed a scalable three-tier application on AWS EKS using Kubernetes orchestration and AWS ALB.
+                                    Implemented GitOps CI/CD pipeline using Jenkins and Argo CD with zero-downtime deployments and configured monitoring using Prometheus and Grafana.
+                                </p>
+                                </div>
+                            </div><br>
+            
+                    <!-- Project 2 -->
+                    <div class="project-item glass-card">
+                                <div class="project-header">
+                                    <h3>MEAN Stack Application Deployment Using CI/CD</h3>
+                    
+                                    <a href="https://github.com/princevaishnav00/MEAN-Application-Deployment" target="_blank"
+                                       class="project-link"> View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                    
+                                <div class="project-tags">
+                                    <span>AWS EC2</span>
+                                    <span>Docker</span>
+                                    <span>Docker Compose</span>
+                                    <span>GitHub Actions</span>
+                                    <span>Nginx</span>
+                                    <span>MongoDB</span>
+                                </div>
+                    
+                                <p>Designed and implemented CI/CD pipeline using GitHub Actions
+                                    for automated Docker image build and deployment.
+                                    Containerized a multi-tier MEAN application and deployed
+                                    it on AWS EC2 with Nginx reverse proxy.
+                                </p>
+                        </div><br>
+                    
+            
+                    <!-- Project 3 -->
+                    <div class="project-item glass-card">
+                          <div class="project-header">
+                              <h3>Terraform Multi-Environment AWS Infrastructure</h3>     
+                              <a href="https://github.com/princevaishnav00/Terraform-Multi-Env-AWS"
+                                 target="_blank"
+                                 class="project-link">
+                                  View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+                              </a>
+                          </div>     
+                          <div class="project-tags">
+                              <span>Terraform</span>
+                              <span>AWS EC2</span>
+                              <span>S3</span>
+                              <span>DynamoDB</span>
+                              <span>VPC</span>
+                              <span>AWS CLI</span>
+                          </div>     
+                          <p>
+                              Built modular Infrastructure as Code using Terraform for Dev, Stage and Production environments.
+                              Developed reusable modules for EC2, S3 and DynamoDB and configured remote state management using S3 and DynamoDB for secure state locking.
+                          </p>
+                        </div><br>
+            
+                     <!-- Project 4 -->
+                    <div class="project-item glass-card">
+                            <div class="project-header">
+                              <h3>Kubernetes Deployment Strategies</h3>   
+                              <a href="https://github.com/princevaishnav00/Deployment-Strategies-Kubernetes-.git"
+                                 target="_blank"
+                                 class="project-link">
+                                  View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+                              </a>
+                            </div>
+                           <div class="project-tags">
+                               <span>Kubernetes </span>
+                                    <span>Docker</span>
+                                    <span>YAML</span>
+                                    <span>NGINX</span>
+                                    <span>APACHE</span>
+                                    <span>Linux</span>
+                                </div> 
+                                 <p>
+                                   Implemented and documented multiple Kubernetes deployment strategies including Recreate, Rolling Update, Blue-Green, and Canary deployments. Created manifests, screenshots, and implementation guides to demonstrate zero-downtime deployment techniques and rollback mechanisms.
+                                </p>
+                                </div>
+                    </div>
+        </section>    
+                    
+         <!-- Contact Section -->
+         <section id="contact" class="section contact-section reveal-element">
+             <div class="section-header">
                 <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
                 <div class="section-divider"></div>
             </div>
