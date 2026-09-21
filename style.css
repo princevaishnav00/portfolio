@@ -453,13 +453,54 @@ html[data-theme="light"] .moon-icon {
     gap: 1.25rem;
 }
 
-/* DevOps IDE Terminal Hero Widget */
+/* Hero Avatar Image & Floating Badges Wrapper */
 .hero-devops-wrapper {
     position: relative;
     width: 100%;
-    max-width: 460px;
+    max-width: 380px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 5;
+}
+
+.hero-avatar-wrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+
+.hero-border-glow {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    z-index: 1;
+    box-shadow: 0 0 35px var(--shadow-glow);
+    animation: rotateGlow 10s linear infinite;
+}
+
+.hero-avatar-container {
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
+    overflow: hidden;
+    z-index: 2;
+    border: 3px solid var(--bg-primary);
+}
+
+.hero-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.hero-avatar-wrapper:hover .hero-avatar-img {
+    transform: scale(1.08);
 }
 
 /* DevOps Infinity Loop Graphic */
@@ -730,40 +771,40 @@ html[data-theme="light"] .moon-icon {
     letter-spacing: 0.5px;
 }
 
-/* Floating Positions & Animations */
+/* Floating Positions & Animations around circular avatar */
 .badge-k8s {
-    top: -22px;
-    left: -20px;
+    top: -10px;
+    left: -10px;
     animation: floatBadge1 4.5s ease-in-out infinite;
 }
 
 .badge-docker {
-    top: 35%;
-    right: -32px;
+    top: 42%;
+    right: -30px;
     animation: floatBadge2 5.2s ease-in-out infinite;
 }
 
 .badge-aws {
-    bottom: -18px;
-    left: -15px;
+    bottom: -10px;
+    left: 20px;
     animation: floatBadge3 4.8s ease-in-out infinite;
 }
 
 .badge-terraform {
-    bottom: 22%;
-    right: -28px;
+    bottom: 12%;
+    right: -20px;
     animation: floatBadge1 4.3s ease-in-out infinite 1s;
 }
 
 .badge-linux {
-    top: -22px;
-    right: 25px;
+    top: -10px;
+    right: 15px;
     animation: floatBadge3 5s ease-in-out infinite 0.5s;
 }
 
 .badge-cicd {
-    bottom: -22px;
-    right: 50px;
+    bottom: 15%;
+    left: -25px;
     animation: floatBadge2 4.6s ease-in-out infinite 1.2s;
 }
 
@@ -870,6 +911,12 @@ html[data-theme="light"] .floating-badge span {
 /* ==========================================================================
    ABOUT ME SECTION
    ========================================================================== */
+.about-container-single {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .about-container-grid {
     display: grid;
     grid-template-columns: 0.75fr 1.25fr;
@@ -950,7 +997,7 @@ html[data-theme="light"] .floating-badge span {
 
 .about-info-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
 }
 
@@ -1732,8 +1779,8 @@ html[data-theme="light"] .dock-item:hover {
         justify-content: center;
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
+    .about-grid, .about-info-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1826,8 +1873,8 @@ html[data-theme="light"] .dock-item:hover {
         width: 100%;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .skills-grid, .about-info-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .experience-timeline {

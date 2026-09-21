@@ -27,7 +27,7 @@
     <header class="header">
         <div class="nav-container">
             <a href="#home" class="logo">
-                Prince<span class="logo-surname">🔸Portfolio</span>
+                <span class="logo-surname">🔸Portfolio</span>
             </a>
 
             <nav class="nav-menu" id="nav-menu">
@@ -134,69 +134,12 @@
                     </div>
                 </div>
                 <div class="hero-devops-wrapper">
-                    <!-- Floating Tech Badges -->
-                    <div class="floating-badge badge-k8s" title="Kubernetes">
-                        <img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
-                        <span>K8s</span>
-                    </div>
-                    <div class="floating-badge badge-docker" title="Docker">
-                        <img src="https://cdn.simpleicons.org/docker" alt="Docker">
-                        <span>Docker</span>
-                    </div>
-                    <div class="floating-badge badge-aws" title="AWS">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                            alt="AWS">
-                        <span>AWS</span>
-                    </div>
-                    <div class="floating-badge badge-terraform" title="Terraform">
-                        <img src="https://cdn.simpleicons.org/terraform" alt="Terraform">
-                        <span>Terraform</span>
-                    </div>
-                    <div class="floating-badge badge-linux" title="Linux">
-                        <img src="https://cdn.simpleicons.org/linux" alt="Linux">
-                        <span>Linux</span>
-                    </div>
-                    <div class="floating-badge badge-cicd" title="CI/CD">
-                        <img src="https://cdn.simpleicons.org/githubactions" alt="CI/CD">
-                        <span>CI/CD</span>
-                    </div>
-
-                    <!-- DevOps IDE Terminal Card -->
-                    <div class="devops-terminal-card glass-card">
-                        <!-- IDE Header -->
-                        <div class="terminal-header">
-                            <div class="window-controls">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                            </div>
-                            <div class="window-title">
-                                devops.config
-                            </div>
-                            <div class="window-lang-tag">
-                                DEVOPS
-                            </div>
-                        </div>
-
-                        <!-- IDE Body with DevOps Infinity Loop Logo & Terminal CLI -->
-                        <div class="terminal-body">
-                            <!-- DevOps Logo Image Box -->
-                            <div class="devops-logo-box">
-                                <img src="./assets/devops_logo.png" alt="DevOps Infinity Loop Lifecycle" class="devops-logo-img">
-                            </div>
-
-                            <!-- Integrated Terminal Execution Simulation -->
-                            <div class="terminal-cli">
-                                <div class="cli-line">
-                                    <span class="cli-prompt">$</span> <span class="cli-cmd" id="typed-cmd">kubectl get pods --namespace production</span>
-                                </div>
-                                <div class="cli-output" id="cli-output">
-                                    <span class="out-success">✓ Ready to build & deploy something great...</span>
-                                </div>
-                                <div class="cli-line cli-prompt-active">
-                                    <span class="cli-prompt">$</span> <span class="cli-cursor">█</span>
-                                </div>
-                            </div>
+                    <!-- Hero Circular Avatar Profile -->
+                    <div class="hero-avatar-wrapper">
+                        <div class="hero-border-glow"></div>
+                        <div class="hero-avatar-container">
+                            <img src="./assets/avatar.png" alt="Prince Vaishnav Profile Portrait"
+                                class="hero-avatar-img">
                         </div>
                     </div>
                 </div>
@@ -217,18 +160,7 @@
                 <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
                 <div class="section-divider"></div>
             </div>
-            <div class="about-container-grid">
-                <!-- Circular Avatar Column -->
-                <div class="about-image-column">
-                    <div class="about-avatar-wrapper">
-                        <div class="about-border-glow"></div>
-                        <div class="about-avatar-container">
-                            <img src="./assets/avatar.png" alt="Prince Vaishnav Profile Portrait"
-                                class="about-avatar-img">
-                        </div>
-                    </div>
-                </div>
-
+            <div class="about-container-single">
                 <!-- Resume-based Details Column -->
                 <div class="about-content-column">
                     <h3 class="about-role-tag">I'm a <span class="gradient-text">DevOps Engineer</span></h3>
@@ -319,7 +251,6 @@
         <!-- Technical Skills Section -->
         <section id="skills" class="section skills-section reveal-element">
             <div class="section-header">
-                <span class="section-subtitle">MY STACK & TOOLS</span>
                 <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
                 <div class="section-divider"></div>
             </div>
@@ -433,10 +364,11 @@
         </section>
 
         <!-- Work Experience Section -->
+
+
         <section id="experience" class="section experience-section reveal-element">
             <div class="section-header">
-                <span class="section-subtitle">CAREER & TRAINING</span>
-                <h2 class="section-title">Experience & <span class="gradient-text">Training</span></h2>
+                <h2 class="section-title">Experience & <span class="gradient-text"> Training </span></h2>
                 <div class="section-divider"></div>
             </div>
             <div class="experience-timeline">
@@ -522,8 +454,7 @@
             <!-- Education Section -->
             <section id="education" class="section education-section reveal-element">
                 <div class="section-header">
-                    <span class="section-subtitle">ACADEMIC BACKGROUND</span>
-                    <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+                    <h2 class="section-title">Education</h2>
                     <div class="section-divider"></div>
                 </div>
                 <div class="education-grid">
@@ -536,11 +467,10 @@
                             </svg>
                         </div>
                         <div class="education-info">
-                            <span class="duration-badge">2022 - 2025</span>
+                            <span class="graduation-year">Graduated: 2025</span>
                             <h3>Bachelor of Computer Application (BCA)</h3>
                             <h4 class="school-name">Gujarat University, Ahmedabad</h4>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -681,7 +611,6 @@
             <!-- Contact Section -->
             <section id="contact" class="section contact-section reveal-element">
                 <div class="section-header">
-                    <span class="section-subtitle">SAY HELLO</span>
                     <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
                     <div class="section-divider"></div>
                 </div>
