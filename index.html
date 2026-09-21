@@ -41,6 +41,17 @@
             </nav>
 
             <div class="nav-actions">
+                <a href="./assets/Prince-Resume.pdf" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary nav-resume-btn">
+                    <svg class="btn-icon-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="12" y1="18" x2="12" y2="12"></line>
+                        <polyline points="9 15 12 18 15 15"></polyline>
+                    </svg>
+                    <span>Resume</span>
+                </a>
                 <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
                     <!-- Moon Icon (Dark Mode Active) -->
                     <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -109,24 +120,84 @@
                             </svg>
                             <span>LinkedIn</span>
                         </a>
-                         <!-- GitHub Button -->
-                        <a href="https://github.com/princevaishnav00"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn btn-secondary">
-                    
+                        <!-- GitHub Button -->
+                        <a href="https://github.com/princevaishnav00" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-secondary">
+
                             <svg class="btn-icon-left" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.72 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.19a10.9 10.9 0 0 1 5.74 0c2.19-1.5 3.15-1.19 3.15-1.19.62 1.59.23 2.76.11 3.05.74.81 1.18 1.85 1.18 3.11 0 4.45-2.7 5.42-5.27 5.71.41.35.77 1.04.77 2.1v3.11c0 .31.2.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+                                <path
+                                    d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.72 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.19a10.9 10.9 0 0 1 5.74 0c2.19-1.5 3.15-1.19 3.15-1.19.62 1.59.23 2.76.11 3.05.74.81 1.18 1.85 1.18 3.11 0 4.45-2.7 5.42-5.27 5.71.41.35.77 1.04.77 2.1v3.11c0 .31.2.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
                             </svg>
-                    
+
                             <span>GitHub</span>
                         </a>
                     </div>
                 </div>
-                <div class="hero-image-wrapper">
-                    <div class="image-border-glow"></div>
-                    <div class="image-container">
-                        <img src="./assets/avatar.png" alt="Prince Vaishnav Profile Portrait" class="profile-img">
+                <div class="hero-devops-wrapper">
+                    <!-- Floating Tech Badges -->
+                    <div class="floating-badge badge-k8s" title="Kubernetes">
+                        <img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
+                        <span>K8s</span>
+                    </div>
+                    <div class="floating-badge badge-docker" title="Docker">
+                        <img src="https://cdn.simpleicons.org/docker" alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="floating-badge badge-aws" title="AWS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                            alt="AWS">
+                        <span>AWS</span>
+                    </div>
+                    <div class="floating-badge badge-terraform" title="Terraform">
+                        <img src="https://cdn.simpleicons.org/terraform" alt="Terraform">
+                        <span>Terraform</span>
+                    </div>
+                    <div class="floating-badge badge-linux" title="Linux">
+                        <img src="https://cdn.simpleicons.org/linux" alt="Linux">
+                        <span>Linux</span>
+                    </div>
+                    <div class="floating-badge badge-cicd" title="CI/CD">
+                        <img src="https://cdn.simpleicons.org/githubactions" alt="CI/CD">
+                        <span>CI/CD</span>
+                    </div>
+
+                    <!-- DevOps IDE Terminal Card -->
+                    <div class="devops-terminal-card glass-card">
+                        <!-- IDE Header -->
+                        <div class="terminal-header">
+                            <div class="window-controls">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-title">
+                                devops.config
+                            </div>
+                            <div class="window-lang-tag">
+                                DEVOPS
+                            </div>
+                        </div>
+
+                        <!-- IDE Body with DevOps Infinity Loop Logo & Terminal CLI -->
+                        <div class="terminal-body">
+                            <!-- DevOps Logo Image Box -->
+                            <div class="devops-logo-box">
+                                <img src="./assets/devops_logo.png" alt="DevOps Infinity Loop Lifecycle" class="devops-logo-img">
+                            </div>
+
+                            <!-- Integrated Terminal Execution Simulation -->
+                            <div class="terminal-cli">
+                                <div class="cli-line">
+                                    <span class="cli-prompt">$</span> <span class="cli-cmd" id="typed-cmd">kubectl get pods --namespace production</span>
+                                </div>
+                                <div class="cli-output" id="cli-output">
+                                    <span class="out-success">✓ Ready to build & deploy something great...</span>
+                                </div>
+                                <div class="cli-line cli-prompt-active">
+                                    <span class="cli-prompt">$</span> <span class="cli-cursor">█</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,39 +213,103 @@
         <!-- About Me Section -->
         <section id="about" class="section about-section reveal-element">
             <div class="section-header">
+                <span class="section-subtitle">GET TO KNOW ME</span>
                 <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
                 <div class="section-divider"></div>
             </div>
-            <div class="about-grid">
-                <div class="about-card intro-card">
-                    <p>DevOps Engineer passionate about cloud infrastructure, automation, and CI/CD pipelines. Skilled in AWS, Docker, Kubernetes, Terraform, and modern DevOps practices through hands-on projects and training. Currently seeking opportunities to contribute and grow in cloud and DevOps environments.</p>
-                </div>
-                <div class="about-info-cards">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                        </div>
-                        <div class="info-text">
-                            <h4>Location</h4>
-                            <p>Bengaluru,India</p>
+            <div class="about-container-grid">
+                <!-- Circular Avatar Column -->
+                <div class="about-image-column">
+                    <div class="about-avatar-wrapper">
+                        <div class="about-border-glow"></div>
+                        <div class="about-avatar-container">
+                            <img src="./assets/avatar.png" alt="Prince Vaishnav Profile Portrait"
+                                class="about-avatar-img">
                         </div>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
+                </div>
+
+                <!-- Resume-based Details Column -->
+                <div class="about-content-column">
+                    <h3 class="about-role-tag">I'm a <span class="gradient-text">DevOps Engineer</span></h3>
+                    <h2 class="about-headline">I build scalable, automated, and reliable cloud infrastructure.</h2>
+
+                    <div class="about-bio-text">
+                        <p>
+                            Hello! I'm <strong>Prince Vaishnav</strong>, a DevOps Engineer passionate about cloud
+                            infrastructure, CI/CD automation, and container orchestration. With hands-on expertise in
+                            <strong>AWS</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, and
+                            <strong>Terraform</strong>, I focus on streamlining deployment pipelines and optimizing
+                            system reliability across production environments.
+                        </p>
+                        <p>
+                            Through my DevOps Internship at <strong>Davine Technologies</strong> and intensive training
+                            at <strong>PySpiders Institute</strong>, I have automated multi-tier application deployments
+                            using <strong>Jenkins</strong> and <strong>GitHub Actions</strong>, implemented GitOps
+                            workflows with <strong>Argo CD</strong>, and built robust monitoring dashboards with
+                            <strong>Prometheus & Grafana</strong>.
+                        </p>
+                    </div>
+
+                    <!-- Info Cards Grid -->
+                    <div class="about-info-grid">
+                        <div class="about-info-card glass-card">
+                            <div class="info-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="info-card-details">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Bengaluru, India</span>
+                            </div>
                         </div>
-                        <div class="info-text">
-                            <h4>Email</h4>
-                            <p><a href="mailto:vaishnavprince995@gmail.com">vaishnavprince995@gmail.com</a></p>
+
+                        <div class="about-info-card glass-card">
+                            <div class="info-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="info-card-details">
+                                <span class="info-label">Email</span>
+                                <a href="mailto:vaishnavprince995@gmail.com"
+                                    class="info-value info-link">vaishnavprince995@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="about-info-card glass-card">
+                            <div class="info-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                                </svg>
+                            </div>
+                            <div class="info-card-details">
+                                <span class="info-label">Education</span>
+                                <span class="info-value">BCA (Graduated 2025)</span>
+                            </div>
+                        </div>
+
+                        <div class="about-info-card glass-card">
+                            <div class="info-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div class="info-card-details">
+                                <span class="info-label">Specialization</span>
+                                <span class="info-value">CI/CD & Cloud Infrastructure</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,6 +319,7 @@
         <!-- Technical Skills Section -->
         <section id="skills" class="section skills-section reveal-element">
             <div class="section-header">
+                <span class="section-subtitle">MY STACK & TOOLS</span>
                 <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
                 <div class="section-divider"></div>
             </div>
@@ -192,7 +328,8 @@
                 <div class="skill-card">
                     <div class="skill-icon aws">
                         <!-- Cloud SVG icon with stylized letters -->
-                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="skill-img">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                            alt="AWS" class="skill-img">
                     </div>
                     <span class="skill-name">AWS</span>
                 </div>
@@ -247,8 +384,8 @@
                 <!-- Skill: Prometheus -->
                 <div class="skill-card">
                     <div class="skill-icon prometheus">
-                        <!-- prometheous icon  -->    
-                    <img src="https://cdn.simpleicons.org/prometheus" alt="Prometheus" class="skill-img">
+                        <!-- prometheous icon  -->
+                        <img src="https://cdn.simpleicons.org/prometheus" alt="Prometheus" class="skill-img">
                     </div>
                     <span class="skill-name">Prometheus</span>
                 </div>
@@ -296,290 +433,324 @@
         </section>
 
         <!-- Work Experience Section -->
-
-
         <section id="experience" class="section experience-section reveal-element">
             <div class="section-header">
-                <h2 class="section-title">Experience & <span class="gradient-text"> Training </span></h2>
+                <span class="section-subtitle">CAREER & TRAINING</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Training</span></h2>
                 <div class="section-divider"></div>
             </div>
             <div class="experience-timeline">
-            <!-- Item 1: DevOps Intern -->
-            <div class="timeline-item">
-                <div class="timeline-badge">
-                    <svg viewBox="0 0 24 24" fill one" strok urrentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                    </svg>
-                </div>
-                <div class="timeline-content glass-card">
-                    <div class="experience-meta">
-                        <span class="duration-badge">Mar 2026 - Aug 2026</span>
-                        <h3>DevOps Intern</h3>
-                        <h4 class="company-name">Davine Technologies, Remote</h4>
-                    </div>
-                    <ul class="experience-details">
-                        <li><div class="bullet-icon"></div><p>Completed weekly hands-on tasks to build practical skills in Docker, Linux, Shell Scripting, Jenkins, GitHub Actions, and Terraform</p></li>
-                        <li><div class="bullet-icon"></div><p>Built and managed Docker containers and wrote Shell scripts to automate deployment and repetitive tasks</p></li>
-                        <li><div class="bullet-icon"></div><p>Configured CI/CD pipelines using Jenkins and GitHub Actions, and learned Terraform for Infrastructure as Code (IaC)</p></li>
-                        <li><div class="bullet-icon"></div><p>Collaborated with team members on assigned tasks and maintained technical documentation to support smooth execution of DevOps activities</p></li>
-                    </ul>
-                </div>
-            </div>
-
-               <!-- Item 2: DevOps Certification -->
-               <div class="timeline-item">
-                <div class="timeline-badge">
-                    <svg viewBox="0 0 24 24" fill none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                    </svg>
-                </div>
-                <div class="timeline-content glass-card">
-                    <div class="experience-meta">
-                        <span class="duration-badge">Jul 2025 - Feb 2026</span>
-                        <h3>DevOps Certification Program</h3>
-                        <h4 class="company-name">PySpiders Institute, Bengaluru</h4>
-                        <a href="https://drive.google.com/file/d/14S2codF9SIv6zoCdVDmB6GAoXdkfD6eH/view?usp=sharing"
-                            target="_blank" class="certificate-link">📜 View Certificate</a>
-                    </div>
-                    <ul class="experience-details">
-                        <li><div class="bullet-icon"></div><p>Completed hands-on training in AWS, Docker, Kubernetes, Terraform.</p></li>
-                        <li><div class="bullet-icon"></div><p>Built multiple real-world DevOps projects.</p></li>
-                        <li><div class="bullet-icon"></div><p>Worked with Jenkins and GitHub Actions for CI/CD.</p></li>
-                        <li><div class="bullet-icon"></div><p>Implemented monitoring and alerting using Prometheus and Grafana.</p></li>
-                    </ul>
-                        </div>
-                    </div>
-                </div>
-
-        <!-- Education Section -->
-        <section id="education" class="section education-section reveal-element">
-            <div class="section-header">
-                <h2 class="section-title">Education</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="education-grid">
-                <div class="education-card glass-card">
-                    <div class="education-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                <!-- Item 1: DevOps Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <svg viewBox="0 0 24 24" fill one" strok urrentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                         </svg>
                     </div>
-                    <div class="education-info">
-                        <span class="graduation-year">Graduated: 2025</span>
-                        <h3>Bachelor of Computer Application (BCA)</h3>
-                        <h4 class="school-name">Gujarat University, Ahmedabad</h4>
+                    <div class="timeline-content glass-card">
+                        <div class="experience-meta">
+                            <span class="duration-badge">Mar 2026 - Aug 2026</span>
+                            <h3>DevOps Intern</h3>
+                            <h4 class="company-name">Davine Technologies, Remote</h4>
+                        </div>
+                        <ul class="experience-details">
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Completed weekly hands-on tasks to build practical skills in Docker, Linux, Shell
+                                    Scripting, Jenkins, GitHub Actions, and Terraform</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Built and managed Docker containers and wrote Shell scripts to automate deployment
+                                    and repetitive tasks</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Configured CI/CD pipelines using Jenkins and GitHub Actions, and learned Terraform
+                                    for Infrastructure as Code (IaC)</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Collaborated with team members on assigned tasks and maintained technical
+                                    documentation to support smooth execution of DevOps activities</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 2: DevOps Certification -->
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <svg viewBox="0 0 24 24" fill none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="experience-meta">
+                            <span class="duration-badge">Jul 2025 - Feb 2026</span>
+                            <h3>DevOps Certification Program</h3>
+                            <h4 class="company-name">PySpiders Institute, Bengaluru</h4>
+                            <a href="https://drive.google.com/file/d/14S2codF9SIv6zoCdVDmB6GAoXdkfD6eH/view?usp=sharing"
+                                target="_blank" class="certificate-link">📜 View Certificate</a>
+                        </div>
+                        <ul class="experience-details">
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Completed hands-on training in AWS, Docker, Kubernetes, Terraform.</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Built multiple real-world DevOps projects.</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Worked with Jenkins and GitHub Actions for CI/CD.</p>
+                            </li>
+                            <li>
+                                <div class="bullet-icon"></div>
+                                <p>Implemented monitoring and alerting using Prometheus and Grafana.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section education-section reveal-element">
+                <div class="section-header">
+                    <span class="section-subtitle">ACADEMIC BACKGROUND</span>
+                    <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="education-grid">
+                    <div class="education-card glass-card">
+                        <div class="education-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="education-info">
+                            <span class="duration-badge">2022 - 2025</span>
+                            <h3>Bachelor of Computer Application (BCA)</h3>
+                            <h4 class="school-name">Gujarat University, Ahmedabad</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
 
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="section">
-             <div class="section-header">
-                 <h2 class="section-title">
-                     Featured <span class="gradient-text">Projects</span>
-                 </h2>
-                 <div class="section-divider"></div>
-             </div>
-            <div class="projects-container">
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="section projects-section reveal-element">
+                <div class="section-header">
+                    <span class="section-subtitle">MY WORK</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
                     <!-- Project 1 -->
-                    <div class="project-item glass-card">
-                            <div class="project-header">
-                              <h3>Three-Tier Application Deployment on AWS EKS</h3>   
-                              <a href="https://github.com/princevaishnav00/3-tier-EKS-deployment"
-                                 target="_blank"
-                                 class="project-link">
-                                  View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
-                              </a>
+                    <div class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="./assets/project_eks.jpg" alt="Three-Tier Application Deployment on AWS EKS"
+                                class="project-img">
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Three-Tier Application Deployment on AWS EKS</h3>
+                            <div class="project-tags">
+                                <span>AWS EKS</span>
+                                <span>Kubernetes</span>
+                                <span>Docker</span>
+                                <span>Jenkins</span>
+                                <span>Argo CD</span>
+                                <span>Prometheus</span>
+                                <span>Grafana</span>
                             </div>
-                           <div class="project-tags">
-                               <span>AWS EKS</span>
-                                    <span>ECR</span>
-                                    <span>ALB</span>
-                                    <span>Kubernetes</span>
-                                    <span>Docker</span>
-                                    <span>Jenkins</span>
-                                    <span>Argo CD</span>
-                                    <span>Prometheus</span>
-                                    <span>Grafana</span>
-                                </div> 
-                                 <p>
-                                    Deployed a scalable three-tier application on AWS EKS using Kubernetes orchestration and AWS ALB.
-                                    Implemented GitOps CI/CD pipeline using Jenkins and Argo CD with zero-downtime deployments and configured monitoring using Prometheus and Grafana.
-                                </p>
-                                </div>
-                            </div><br>
-            
-                    <!-- Project 2 -->
-                    <div class="project-item glass-card">
-                                <div class="project-header">
-                                    <h3>MEAN Stack Application Deployment Using CI/CD</h3>
-                    
-                                    <a href="https://github.com/princevaishnav00/MEAN-Application-Deployment" target="_blank"
-                                       class="project-link"> View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
-                    
-                                <div class="project-tags">
-                                    <span>AWS EC2</span>
-                                    <span>Docker</span>
-                                    <span>Docker Compose</span>
-                                    <span>GitHub Actions</span>
-                                    <span>Nginx</span>
-                                    <span>MongoDB</span>
-                                </div>
-                    
-                                <p>Designed and implemented CI/CD pipeline using GitHub Actions
-                                    for automated Docker image build and deployment.
-                                    Containerized a multi-tier MEAN application and deployed
-                                    it on AWS EC2 with Nginx reverse proxy.
-                                </p>
-                        </div><br>
-                    
-            
-                    <!-- Project 3 -->
-                    <div class="project-item glass-card">
-                          <div class="project-header">
-                              <h3>Terraform Multi-Environment AWS Infrastructure</h3>     
-                              <a href="https://github.com/princevaishnav00/Terraform-Multi-Env-AWS"
-                                 target="_blank"
-                                 class="project-link">
-                                  View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
-                              </a>
-                          </div>     
-                          <div class="project-tags">
-                              <span>Terraform</span>
-                              <span>AWS EC2</span>
-                              <span>S3</span>
-                              <span>DynamoDB</span>
-                              <span>VPC</span>
-                              <span>AWS CLI</span>
-                          </div>     
-                          <p>
-                              Built modular Infrastructure as Code using Terraform for Dev, Stage and Production environments.
-                              Developed reusable modules for EC2, S3 and DynamoDB and configured remote state management using S3 and DynamoDB for secure state locking.
-                          </p>
-                        </div><br>
-            
-                     <!-- Project 4 -->
-                    <div class="project-item glass-card">
-                            <div class="project-header">
-                              <h3>Kubernetes Deployment Strategies</h3>   
-                              <a href="https://github.com/princevaishnav00/Deployment-Strategies-Kubernetes-.git"
-                                 target="_blank"
-                                 class="project-link">
-                                  View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
-                              </a>
-                            </div>
-                           <div class="project-tags">
-                               <span>Kubernetes </span>
-                                    <span>Docker</span>
-                                    <span>YAML</span>
-                                    <span>NGINX</span>
-                                    <span>APACHE</span>
-                                    <span>Linux</span>
-                                </div> 
-                                 <p>
-                                   Implemented and documented multiple Kubernetes deployment strategies including Recreate, Rolling Update, Blue-Green, and Canary deployments. Created manifests, screenshots, and implementation guides to demonstrate zero-downtime deployment techniques and rollback mechanisms.
-                                </p>
-                                </div>
+                            <p class="project-card-desc">
+                                Deployed a scalable three-tier application on AWS EKS using Kubernetes orchestration and
+                                AWS ALB. Implemented GitOps CI/CD pipeline using Jenkins and Argo CD with zero-downtime
+                                deployments and monitoring using Prometheus & Grafana.
+                            </p>
+                            <a href="https://github.com/princevaishnav00/3-tier-EKS-deployment" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary project-action-btn">
+                                <span>View on GitHub</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                     </div>
-        </section>    
-                    
-         <!-- Contact Section -->
-         <section id="contact" class="section contact-section reveal-element">
-             <div class="section-header">
-                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info-panel glass-card">
-                    <h3>Let's Connect</h3>
-                    <p class="contact-subtitle">Feel free to reach out for collaborations, job opportunities, or just to
-                        say hi!</p>
 
-                    <div class="contact-details-list">
-                        <div class="contact-item">
-                            <div class="contact-icon-wrapper">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                    </path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                            </div>
-                            <div class="contact-detail">
-                                <span>Email</span>
-                                <a href="mailto:vaishnavprince995@gmail.com"
-                                    class="detail-link">vaishnavprince995@gmail.com</a>
-                            </div>
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="./assets/project_mean.jpg" alt="MEAN Stack Application Deployment Using CI/CD"
+                                class="project-img">
+                            <div class="project-img-overlay"></div>
                         </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon-wrapper">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                    </path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">MEAN Stack Application Deployment Using CI/CD</h3>
+                            <div class="project-tags">
+                                <span>AWS EC2</span>
+                                <span>Docker</span>
+                                <span>Docker Compose</span>
+                                <span>GitHub Actions</span>
+                                <span>Nginx</span>
+                                <span>MongoDB</span>
                             </div>
-                            <div class="contact-detail">
-                                <span>LinkedIn</span>
-                                <a href="https://www.linkedin.com/in/prince-vaishnav-b685a0319/" target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="detail-link">linkedin.com/in/prince-vaishnav-b685a0319</a>
-                            </div>
+                            <p class="project-card-desc">
+                                Designed and implemented CI/CD pipeline using GitHub Actions for automated Docker image
+                                build and deployment. Containerized a multi-tier MEAN application and deployed it on AWS
+                                EC2 with Nginx reverse proxy.
+                            </p>
+                            <a href="https://github.com/princevaishnav00/MEAN-Application-Deployment" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary project-action-btn">
+                                <span>View on GitHub</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon-wrapper">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                    </path>
-                                </svg>
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="./assets/project_terraform.jpg"
+                                alt="Terraform Multi-Environment AWS Infrastructure" class="project-img">
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Terraform Multi-Environment AWS Infrastructure</h3>
+                            <div class="project-tags">
+                                <span>Terraform</span>
+                                <span>AWS EC2</span>
+                                <span>S3</span>
+                                <span>DynamoDB</span>
+                                <span>VPC</span>
+                                <span>AWS CLI</span>
                             </div>
-                            <div class="contact-detail">
-                                <span>Phone</span>
-                                <a href="tel:+919016151228" class="detail-link">+91 90161 51228</a>
+                            <p class="project-card-desc">
+                                Built modular Infrastructure as Code using Terraform for Dev, Stage, and Production
+                                environments. Developed reusable modules for EC2, S3, and DynamoDB with remote state
+                                management and secure locking.
+                            </p>
+                            <a href="https://github.com/princevaishnav00/Terraform-Multi-Env-AWS" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary project-action-btn">
+                                <span>View on GitHub</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="./assets/project_k8s.jpg" alt="Kubernetes Deployment Strategies"
+                                class="project-img">
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Kubernetes Deployment Strategies</h3>
+                            <div class="project-tags">
+                                <span>Kubernetes</span>
+                                <span>Docker</span>
+                                <span>YAML</span>
+                                <span>NGINX</span>
+                                <span>Apache</span>
+                                <span>Linux</span>
+                            </div>
+                            <p class="project-card-desc">
+                                Implemented and documented multiple Kubernetes deployment strategies including Recreate,
+                                Rolling Update, Blue-Green, and Canary deployments with zero-downtime techniques and
+                                rollback mechanisms.
+                            </p>
+                            <a href="https://github.com/princevaishnav00/Deployment-Strategies-Kubernetes-.git"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-primary project-action-btn">
+                                <span>View on GitHub</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section reveal-element">
+                <div class="section-header">
+                    <span class="section-subtitle">SAY HELLO</span>
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info-panel glass-card">
+                        <h3>Let's Connect</h3>
+                        <p class="contact-subtitle">Feel free to reach out for collaborations, job opportunities, or
+                            just to
+                            say hi!</p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="contact-detail">
+                                    <span>Email</span>
+                                    <a href="mailto:vaishnavprince995@gmail.com"
+                                        class="detail-link">vaishnavprince995@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-detail">
+                                    <span>LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/prince-vaishnav-b685a0319/" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="detail-link">linkedin.com/in/prince-vaishnav-b685a0319</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="contact-detail">
+                                    <span>Phone</span>
+                                    <a href="tel:+919016151228" class="detail-link">+91 90161 51228</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
     </main>
 
-    <!-- Floating Navigation Bar & Footer -->
-    <div class="floating-dock-container">
-        <div class="floating-dock glass-card">
-            <a href="./assets/Prince-Resume.pdf" target="_blank"   rel="noopener noreferrer" class="btn btn-primary">
-               <svg class="btn-icon-left" xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round"
-                     stroke-linejoin="round">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-                <span><b>RESUME</b></span>
-            </a>
 
-        </div>
-    </div>
 
     <footer class="footer">
         <p>&copy; 2026 Prince Vaishnav &bull; All rights reserved.</p>
@@ -590,4 +761,3 @@
 </body>
 
 </html>
-

@@ -144,4 +144,69 @@ document.addEventListener('DOMContentLoaded', () => {
             successModal.classList.add('hidden');
         });
     }
+
+    /* ==========================================================================
+       DEVOPS TERMINAL DYNAMIC COMMAND ANIMATION
+       ========================================================================== */
+    const typedCmdElement = document.getElementById('typed-cmd');
+    const cliOutputElement = document.getElementById('cli-output');
+
+    if (typedCmdElement && cliOutputElement) {
+        const commands = [
+            {
+                cmd: "kubectl get pods --namespace production",
+                output: [
+                    `<span class="out-success">✓ web-app-pod-1    STATUS: Running (100% Uptime)</span>`,
+                    `<span class="out-success">✓ api-gateway-pod  STATUS: Active</span>`
+                ]
+            },
+            {
+                cmd: "terraform plan -out=tfplan",
+                output: [
+                    `<span class="out-success">✓ Plan: 3 to add, 0 to change, 0 to destroy.</span>`,
+                    `<span class="out-success">✓ AWS VPC & EKS Cluster configured</span>`
+                ]
+            },
+            {
+                cmd: "argocd app sync production-cluster",
+                output: [
+                    `<span class="out-success">✓ TIMESTAMP: Just now - Revision 4a8f9c</span>`,
+                    `<span class="out-success">✓ Sync Status: Synced & Healthy</span>`
+                ]
+            }
+        ];
+
+        let cmdIndex = 0;
+        let charIndex = commands[0].cmd.length;
+        let isDeleting = false;
+
+        function typeLoop() {
+            const currentObj = commands[cmdIndex];
+            const currentCmd = currentObj.cmd;
+
+            if (isDeleting) {
+                typedCmdElement.textContent = currentCmd.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typedCmdElement.textContent = currentCmd.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 30 : 60;
+
+            if (!isDeleting && charIndex === currentCmd.length) {
+                cliOutputElement.innerHTML = currentObj.output.join('');
+                typeSpeed = 3500; // Pause at end of command to let user read
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                cmdIndex = (cmdIndex + 1) % commands.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeLoop, typeSpeed);
+        }
+
+        setTimeout(typeLoop, 3000);
+    }
 });
